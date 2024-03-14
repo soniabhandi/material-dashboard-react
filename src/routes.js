@@ -42,6 +42,7 @@ import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
+import PrefilledData from "layouts/prefilled-data"
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -99,6 +100,14 @@ const routes = [
   },
   {
     type: "collapse",
+    name: "Prefilled-Data",
+    key: "prefilled-data",
+    icon: <Icon fontSize="small">notifications</Icon>,
+    route: "/prefilled-data",
+    component: <PrefilledData />,
+  },
+  {
+    type: "collapse",
     name: "Sign In",
     key: "sign-in",
     icon: <Icon fontSize="small">login</Icon>,
@@ -113,6 +122,7 @@ const routes = [
     route: "/authentication/sign-up",
     component: <SignUp />,
   },
+
 ];
 
 export default routes;
